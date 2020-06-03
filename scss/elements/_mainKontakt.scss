@@ -1,0 +1,10 @@
+main#kontaktMain{
+    padding: 2em 6em 4em;
+    
+    @include formularz(center, 50%); 
+
+    div#najczesciejOdwiedzane{
+        @include suggestedItems(100%, 22%); 
+        margin-top: 3em;
+    }
+} 

@@ -1,0 +1,28 @@
+nav{   
+
+    ul{
+        display: flex;
+        background-color: $main-color; 
+
+        li{
+            flex: 1;
+            list-style: none;
+
+            a{
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                text-align: center;
+                font-size: 1.4em;
+                padding: 1em 0;
+
+                &:hover{
+                    background-color: $secondary-color; 
+                    text-decoration: none;
+                color: #fff;
+                }
+            }
+        }
+    }
+    
+}

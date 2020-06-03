@@ -1,0 +1,95 @@
+header {
+    padding-top: 13px;
+    overflow: auto;
+    justify-content: space-between;
+
+    #searchBar, #cart{
+        margin-top: 22px;
+    }
+
+   a#logo{
+       display: block;
+       width: 40%;
+       float: left;
+
+       img{
+            width: 100%;
+       }   
+   }
+
+   form#searchBar{
+    float: left;
+        width: 40%;
+        margin: 0 5%;
+        @include header-border-padding;
+        padding: 0;
+        margin-top: 22px;
+        
+        label{
+            width: 100%;
+            //border: 2px solid $main-color;
+            
+            
+            overflow: hidden;
+
+            >*{
+                border: none;
+                font-size: 1em;
+                padding: .4em 20px;
+                border-radius: 2em;
+                color: $main-color;
+            }
+
+            input{
+                width: 80%;
+                outline: none;
+
+            }
+
+            button{
+                width: 19%;
+                background-color: #fff;                
+                cursor: pointer;
+                border-left: .15em solid $main-color;
+                outline: none;
+
+            }
+            
+        }
+   }
+
+    a#cart{
+        display: block;
+        text-decoration: none;            
+        @include header-border-padding;            
+        float: right;
+        text-align: center;
+        width: 10%;
+        background-color: #fff; 
+        color: $main-color;
+
+        &:visited{
+            >*{
+                color: $main-color;
+            }
+        }
+
+        &:hover{
+            background-color: $secondary-color;
+            >*{
+                color: #fff;
+            }
+        }
+    
+        >*{
+            display: inline-block;
+        }
+    
+        i{
+            color: $main-color;
+        }
+        
+    }
+    
+    
+}

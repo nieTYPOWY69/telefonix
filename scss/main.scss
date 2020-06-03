@@ -1,0 +1,15 @@
+@import "generic/reset";
+
+@import "settings/variables";
+@import "settings/mixins";
+
+@import "elements/base";
+@import "elements/header";
+@import "elements/nav"; 
+@import "elements/footer";  
+
+@import "elements/mainIndex"; 
+@import "elements/mainProduct"; 
+@import "elements/mainKategoria"; 
+@import "elements/mainKontakt"; 
+@import "elements/mainKoszyk"; 

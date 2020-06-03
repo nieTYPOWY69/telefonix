@@ -1,0 +1,93 @@
+main#productMain{
+    padding: 4em 6em;
+    
+    #product{
+        display: flex;
+        justify-content: space-between;
+
+        #photo{
+            flex-basis: 35%;
+            padding: 1em;
+            border: 1px solid $main-color; 
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        #itemInformations{
+            flex-basis: 60%;
+
+            p{
+                color: $main-color;
+            }
+
+            #itemName{
+                font-size: 2.5em;
+            }
+
+            #itemDescription{
+                margin: 2em 0;
+            }
+
+            #adding{
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                font-size: 1.3em;
+
+                #amount{
+                    flex-basis: 25%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    -moz-appearance: textfield; 
+                    }
+
+                    input{
+                        flex-basis: 50%;
+                        border: none;
+                        background-color: $main-color;
+                        color: #fff;
+                        outline: none;
+                    }
+
+                    p{
+                        display: flex;
+                        flex-basis: 50%;
+                    }
+                }
+
+                > div *{
+                    padding: .5em;
+                    font-size: 1.1em;
+                }
+
+                .addToCart{
+                    flex-basis: 50%;
+                    background-color: $main-color;
+                    cursor: pointer;
+                    
+                    p{
+                        color: #fff;
+                        text-align: center;
+                        display: block;
+                    }
+                    
+                    &:hover{
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    div#recent{
+        @include suggestedItems(100%, 22%); 
+        margin-top: 3em;
+    }
+} 

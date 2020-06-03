@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29b32c267a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    
+</head>
+
+<body>
+        <header class="container">
+            <a href="index.html" id="logo">
+                <img src="img/logo.png" alt="TELEFONIX">
+            </a>
+           
+                <form action="#" method="GET" id="searchBar">
+                    <label>
+                        <input type="text" placeholder="Czego szukasz?" id="search">
+
+                        <button type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </label>                    
+                </form>
+
+            <a href="koszyk.html" id="cart">               
+                <i class="fas fa-shopping-cart"></i>
+                <p>0</p>                
+            </a>
+        </header>
+
+        <nav class="container">
+            <ul>
+                <li>
+                    <a href="telefony.html">Telefony</a>
+                </li>
+
+                <li>
+                    <a href="akcesoria.html">Akcesoria</a>
+                </li>
+
+                <li>
+                    <a href="promocje.html">Promocje</a>
+                </li>
+
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="container" id="kontaktMain">            
+            <h3>Masz pytanie? Napisz do nas!</h3>
+
+            <form action="#" method="GET">
+                <p>Imię*</p> <input id="imieKontakt" type="text" required>  <br> 
+                <p>Nazwisko*</p> <input id="nazwiskoKontakt" type="text" required><br>
+                <p>E-mail*</p> <input id="emailKontakt" type="email" required>  <br>   
+                <p>Nr telefonu</p> <input id="nrTelefonuKontakt" type="number" min="100000000" max="999999999" required> <br>
+                <p>Wiadomość*</p> <input id="wiadomoscKontakt" type="text" required> <br>
+                <input type="submit" value="Wyślij">           
+            </form>
+            
+            <div id="najczesciejOdwiedzane">
+                <p>
+                    Najczęściej odwiedzane
+                </p>
+
+                <div class="linia"> </div>
+
+                <ul>
+                    <li class="single-phone">
+                        <a href="product.html">
+                            <div class="phone-photo">
+                                <img src="img/phone_1.jpg">
+                            </div>
+    
+                            <p class="model">
+                                Sony Xperia Z1
+                            </p>
+    
+                            <p class="price">
+                                400 zł
+                            </p>
+                        </a>
+
+                        <div class="addToCart" id="bestseller_1">
+                            <p>Dodaj do koszyka</p>
+                        </div>
+                    </li>
+
+                    <li class="single-phone">
+                        <a href="product.html">
+                            <div class="phone-photo">
+                                <img src="img/phone_1.jpg">
+                            </div>
+    
+                            <p class="model">
+                                Sony Xperia Z1
+                            </p>
+    
+                            <p class="price">
+                                400 zł
+                            </p>
+                        </a>
+
+                        <div class="addToCart" id="bestseller_2">
+                            <p>Dodaj do koszyka</p>
+                        </div>
+                    </li>
+
+                    <li class="single-phone">
+                        <a href="product.html">
+                            <div class="phone-photo">
+                                <img src="img/phone_1.jpg">
+                            </div>
+    
+                            <p class="model">
+                                Sony Xperia Z1
+                            </p>
+    
+                            <p class="price">
+                                400 zł
+                            </p>
+                        </a>
+
+                        <div class="addToCart" id="bestseller_3">
+                            <p>Dodaj do koszyka</p>
+                        </div>
+                    </li>
+
+                    <li class="single-phone">
+                        <a href="product.html">
+                            <div class="phone-photo">
+                                <img src="img/phone_1.jpg">
+                            </div>
+    
+                            <p class="model">
+                                Sony Xperia Z1
+                            </p>
+    
+                            <p class="price">
+                                400 zł
+                            </p>
+                        </a>
+
+                        <div class="addToCart" id="bestseller_4">
+                            <p>Dodaj do koszyka</p>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+
+        </main>
+
+        <footer class="container">
+            <div id="social-media">
+                <p>Social media</p>
+
+                <ul>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">Youtube</a>
+                    </li>
+
+                    <li>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="sklepy">
+                <p>Sklepy stacjonarne</p>
+                
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>Gliwice ul. Chorzowska 5
+                    </li>
+
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>Katowice ul. Bliska 99
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Kontakt">
+                <p>Kontakt</p>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>989 989 989
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope"></i>kontakt@telefonix.pl
+                    </li>
+                </ul>
+            </div>
+
+
+        </footer>
+
+        
+       
+</body>
+
+</html>

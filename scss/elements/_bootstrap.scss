@@ -1,0 +1,94 @@
+header {
+    overflow: auto;
+    justify-content: space-between;
+
+    #searchBar, #cart{
+        margin-top: 17px;
+    }
+
+   a#logo{
+       display: block;
+       width: 40%;
+       float: left;
+
+       img{
+            width: 100%;
+       }   
+   }
+
+   div#searchBar{
+    float: left;
+        width: 40%;
+        margin: 0 5%;
+        
+
+        form{
+            width: 100%;
+           // margin-top: 12px;
+            
+            
+            >*{
+                @include header-border-padding;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            input{
+                width: 80%;
+
+                
+            }
+
+            button{
+                width: 15%;
+                background-color: $main-color;
+                cursor: pointer;
+
+                i{
+                    color: #fff;
+                }
+            }
+        }
+   }
+
+    a#cart{
+        display: block;
+        text-decoration: none;            
+        @include header-border-padding;            
+        float: right;
+        text-align: center;
+        width: 10%;
+        background-color: #fff; 
+
+        &:visited{
+            >*{
+                color: $main-color;
+            }
+        }
+
+        &:hover{
+            background-color: $secondary-color;
+            >*{
+                color: #fff;
+            }
+        }
+    
+        >*{
+            display: inline-block;
+        }
+    
+        i{
+            color: $main-color;
+        }
+
+        p{
+            margin-bottom: 0; //naprawa
+        }
+            
+        
+    }
+    
+    
+}

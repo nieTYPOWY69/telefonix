@@ -1,0 +1,40 @@
+main#kategoriaMain{
+    padding: 2em 0em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+    #displayCategories{
+        flex-basis: 15%;
+
+        ul{
+            list-style: none;
+            text-align: left;
+
+            li{
+                background-color: $secondary-color;
+                color: #fff;
+                padding: .5em;
+                border-bottom: 1px solid #fff;
+                cursor: pointer;
+
+                &:last-child{
+                    border: none;
+                }
+
+                &:hover{
+                    background-color: $main-color;
+                    
+                }
+            }
+        }
+    }
+
+    div#categoryItems{
+        flex-basis: 80%;
+        @include suggestedItems(100%, 22%); 
+        //margin-top: 3em;
+    }
+
+} 

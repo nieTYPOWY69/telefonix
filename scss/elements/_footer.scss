@@ -1,0 +1,43 @@
+footer {
+    background-color: $main-color; 
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    padding: 2em 0;
+    
+    >div{
+        flex-basis: 25%;
+
+        p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.9em;
+            margin-bottom: .5em;
+        }
+            
+        .addresses{
+            display: flex;
+        }
+            ul{
+                text-align: center;
+    
+                li{
+                    list-style: none;
+                    font-size: 1.2em;
+                    margin-bottom: .4em; 
+
+                    i{
+                        margin-right: .4em;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        
+                        
+                    }
+                }
+            }
+    }
+    
+}
